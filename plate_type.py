@@ -1,7 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed May 26 23:08:03 2021
+Created on Tue Jun 15 12:27:14 2021
 
+@author: My Lap
+"""
+
+# -*- coding: utf-8 -*-
+"""
+Created on Wed May 26 23:08:03 2021
 @author: My Lap
 """
 from PIL import Image
@@ -26,19 +32,19 @@ def plate_type(path):
     x = x.astype(int)
     #print(x)     
     if ((x[0]>=128 and x[0]<=255) and (x[1]>=30 and x[1]<=100) and (x[2]>=30 and x[2]<=122)):
-         type="red"
+         type="TransportationCar"
     elif (( x[0]>=25 and x[0]<=65) and ( x[1]>=25 and x[1]<=105) and ( x[2]>=112 and x[2]<=225)):
-        type="darkblue"
+        type="PoliceCar"
     elif ((x[0]>=0 and x[0]<=127) and (x[1]>=84 and x[1]<=255) and (x[2]>=160 and x[2]<=255)):
-        type="lightblue"
+        type="PrivateCar"
     elif ((x[0]>=205 and x[0]<=255) and (x[1]>=92 and x[1]<=165) and (x[2]>=0 and x[2]<=92)):
-        type="orange"
+        type="Taxi"
     elif ((x[0]>=189 and x[0]<=255) and (x[1]>=183 and x[1]<=255) and (x[2]>=0 and x[2]<=107)):
-        type="yellow"
+        type="CustomsCar"
     elif ((x[0]>=60 and x[0]<=152) and (x[1]>=107 and x[1]<=251) and (x[2]>=47 and x[2]<=152)):
-        type="green"
+        type="PoliticalCar"
     elif ((x[0]>=139 and x[0]<=255) and (x[1]>=69 and x[1]<=218) and (x[2]>=19 and x[2]<=185)):
-        type="brown" 
+        type="CommercialCar" 
     else:
         type="NO TYPE"
        
@@ -47,4 +53,3 @@ def plate_type(path):
 
 #kind=plate_type('E:/4th CSE/2nd Term/Image processing/project/testorange.jpeg')  
 #print (kind)
-      
