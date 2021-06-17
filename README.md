@@ -1,6 +1,6 @@
 # Plate-Detector-
 
-[![Alt text for your video]](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/VPD.mp4)
+[![Alt text for your video]](https://youtu.be/DwdHsuaTzb4)
 
 
 
