@@ -46,7 +46,7 @@ def plate_type(path):
     elif ((x[0]>=139 and x[0]<=255) and (x[1]>=69 and x[1]<=218) and (x[2]>=19 and x[2]<=185)):
         type="CommercialCar" 
     else:
-        type="NO TYPE"
+        type="Buses and Others"
        
     return type
   
