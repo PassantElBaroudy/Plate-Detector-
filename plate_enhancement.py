@@ -1,11 +1,7 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
-from skimage import io
 from skimage.color import label2rgb
-from PIL import Image 
-import PIL
 
 
 def plate_enhancement(img):
@@ -66,15 +62,16 @@ def plate_enhancement(img):
 
     #final image B&W
     final_img = cv2.threshold( np.uint8(lbl_img),0 , 255, cv2.THRESH_BINARY)[1]
-    kernel1 =cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(3,5))
-    final_img1 = cv2.dilate(final_img,kernel1,iterations = 1)
-    #final_img1 = cv2.erode(final_img1,kernel1,iterations = 1)
-
+    kernel1 =cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(1,2))
+    final_img1 = cv2.erode(final_img,kernel1,iterations = 1)
+    kernel =cv2.getStructuringElement(cv2.MORPH_RECT,(5,50))
+    final_img1 = cv2.dilate(final_img1,kernel1,iterations = 20)
     num_objects,_,dims,centers=cv2.connectedComponentsWithStats(np.uint8(final_img1), 4, cv2.CV_32S)
-    plt.imshow(final_img,'gray')
-    plt.show()
-    plt.imshow(final_img1,'gray')
-    plt.show()
+    #plt.imshow(final_img,'gray')
+    #plt.show()
+    #plt.imshow(final_img1,'gray')
+    #plt.show()
+    #print(num_objects)
 
     return final_img,num_objects,dims,centers,final_img1
 
@@ -91,7 +88,7 @@ def plate_enhancement(img):
 #plt.imshow(final_img1,'gray')
 # plt.savefig('final_img.png')
 # plt.show()
-# print(num_objects)
+#print(num_objects)
 # print(centers)
 #cv2.imwrite('final_img.jpg', final_img)
 
