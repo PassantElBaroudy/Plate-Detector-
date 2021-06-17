@@ -1,5 +1,9 @@
 # Plate-Detector-
 
+
+![alt text](http://url/to/img.png)
+
+
 # Team Members:
 1-Andrew Rafaat
 
