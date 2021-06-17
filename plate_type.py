@@ -22,7 +22,7 @@ def plate_type(path):
     dst = cv2.fastNlMeansDenoisingColored(RGB_img, None, 10, 10, 10, 15)
     bigger_denoised = cv2.resize(dst, (2000, 1000))
     crop_img = bigger_denoised[130:200,950:1000]
-    plt.imshow(crop_img)
+    #plt.imshow(crop_img)
 # Make into Numpy array
     na = np.array(crop_img)
 
