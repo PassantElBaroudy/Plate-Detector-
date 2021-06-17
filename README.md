@@ -1,7 +1,7 @@
 # Plate-Detector-
 
+[![Alt text for your video]](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/VPD.mp4)
 
-![alt text](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/VPD.mp4)
 
 
 # Team Members:
