@@ -20,6 +20,12 @@
 
 
 # Implementation:
+GENERAL IDEA: The idea of the project: is to take the image to plate enhancement function which does all the pre-processing then split plate takes it to divide the image into two parts letters and characters
+to give it to nums and chars function to get the number of chars and numbers to give it to mohfza function to know the name of Governorate
+then function split splits the chars and numbers images into each number and each letter alone in a picture so function OCR takes it to get the numbers and letters
+in parallel to that function plate types is working to know the color of the plate to know the type of the plate 
+then connects the letters and numbers with the database to get the info we needed for this car 
+
 1-PlateType: This function takes the plate image then resize it and crop the image to get the upper part and apply some functions to get the pixels of the image and its values then 
 get the mean of the color and check its range within which range to know the plate type
 
