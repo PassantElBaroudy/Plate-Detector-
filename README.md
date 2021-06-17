@@ -1,7 +1,7 @@
 # Plate-Detector-
 
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/VPD.mp4)
 
 
 # Team Members:
