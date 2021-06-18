@@ -29,6 +29,7 @@ to give it to nums and chars function to get the number of chars and numbers to 
 then function split splits the chars and numbers images into each number and each letter alone in a picture so function OCR takes it to get the numbers and letters
 in parallel to that function plate types is working to know the color of the plate to know the type of the plate 
 then connects the letters and numbers with the database to get the info we needed for this car we access all of this through GUI
+you can check source file to know the type of each plate and it's Governorate
 
 
 1-PlateType: This function takes the plate image then resize it and crop the image to get the upper part and apply some functions to get the pixels of the image and its values then 
