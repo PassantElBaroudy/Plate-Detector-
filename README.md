@@ -19,7 +19,7 @@ VIDEO LINK: https://youtu.be/DwdHsuaTzb4
  
 
 # Description:
-•The project idea is to implement an image processing algorithm that aims to detect the vehicle plate’s type and its governorate in a given image and detect the characters and numbers in it , It also detects the car’s owner information ( Name ) and it detects the car’s modeland traffic violations .
+•The project idea is to implement an image processing algorithm that aims to detect the vehicle plate’s type and its governorate in a given image and detect the characters and numbers in it , It also detects the car’s owner information ( Name and Age ) and it detects the car’s model and traffic violations .
 
 
 
