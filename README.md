@@ -46,7 +46,7 @@ get the mean of the color and check its range within which range to know the pla
 
 
 # User Guide:
-![Test Case](link to image / GIF)
+![Test Case](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/Dataset/image%203.jpg?raw=true)
 1- Browse to choose the image 
 2- press submit , the info will appear
 3- you can exit if you don't want to browse another plate or you can press refresh to browse another plate
