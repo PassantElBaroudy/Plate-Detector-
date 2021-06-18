@@ -60,7 +60,7 @@ def plate_enhancement(img):
             if lbl_img[r,c] != 0:
                 lbl_img[r,c] = 0
 
-    #convert the processed image to Blach&White again
+    #convert the processed image to Black&White again
     final_img = cv2.threshold( np.uint8(lbl_img),0 , 255, cv2.THRESH_BINARY)[1]
     #remove noise pixels using EROSION
     kernel1 =cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(1,2))
