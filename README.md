@@ -59,8 +59,8 @@ get the mean of the color and check its range within which range to know the pla
 
 
 ## split_plate function
-⚫It takes the output image from plate_enhancement function and split the plate into two parts, first part is the characters in the plate and the second part is the numbers.
-⚫This function is implemented to extract numbers and characters easily from pltae.
+⚫ It takes the output image from plate_enhancement function and split the plate into two parts, first part is the characters in the plate and the second part is the numbers.
+⚫ This function is implemented to extract numbers and characters easily from pltae.
 ![characters](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/chars.PNG)
 ![numbers](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/nums.PNG)
 
