@@ -3,18 +3,6 @@
 VIDEO LINK: https://youtu.be/DwdHsuaTzb4
 
 
-
-# Team Members:
-1-Andrew Rafaat
-
-2-Pavly Mario
-
-3-Passant Mohamed 
-
-4-Salah Adel
-
-5-Youssef Rafaat
-
  # Requirements:
  
 
