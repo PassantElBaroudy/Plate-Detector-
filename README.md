@@ -19,12 +19,41 @@ in parallel to that function plate types is working to know the color of the pla
 then connects the letters and numbers with the database to get the info we needed for this car we access all of this through GUI
 you can check source file to know the type of each plate and it's Governorate
 
+### plate_enhancement function
+⚫ We convert the input image to grayscale image then black&white to apply Image processing techniques to it.
 
-1-PlateType: This function takes the plate image then resize it and crop the image to get the upper part and apply some functions to get the pixels of the image and its values then 
-get the mean of the color and check its range within which range to know the plate type
+![1](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/2.png)
+![2](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/3.png)
+## 
+⚫ We extract label image using CONNECTED COMPONENT then color its objects using mycolor matrix.
 
-2-Mohfza: each Governorate has its own plate so we check the number of letters and numbers and also check the first one or two letters to know the type of each one
+![3](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/4.png)
+![4](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/5.png)
+## 
+⚫ We remove all objects except numbers and characters.
 
+![5](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/6.png)
+![6](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/7.png)
+## 
+⚫ We convert the processed image to Blach&White again.
+
+![7](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/8.png)
+## 
+⚫ We remove noise pixels(undesired small objects) using EROSION, we use this image later to recognize the characters and digits.
+
+![8](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/9.png)
+## 
+⚫ We make every arabic letter with dots to be one single object using DILATION to use this image later to extract the real number of characters and digits in numANDchar function.
+
+![9](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/10.png)
+
+## 
+### plate_type function
+⚫ This function takes the plate image then resize it and crop the image to get the upper part and apply some functions to get the pixels of the image and its values then 
+get the mean of the color and check its range within which range to know the plate type.
+
+### Mohfza function
+⚫ Each Governorate has its own plate so we check the number of letters and numbers and also check the first one or two letters to know the type of each one.
 
 
 
