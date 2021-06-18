@@ -47,7 +47,9 @@ you can check source file to know the type of each plate and it's Governorate
 
 ![9](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/10.png)
 
-## 
+### numANDchar function
+⚫ This function takes the processed image after dilation then splits it into Characters image and numbers image then return the number of objects in each image using connected component. 
+
 ### plate_type function
 ⚫ This function takes the plate image then resize it and crop the image to get the upper part and apply some functions to get the pixels of the image and its values then 
 get the mean of the color and check its range within which range to know the plate type.
