@@ -24,25 +24,25 @@ you can check source file to know the type of each plate and it's Governorate
 
 ![1](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/2.png)
 ![2](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/3.png)
-## 
+ 
 ⚫ We extract label image using CONNECTED COMPONENT then color its objects using mycolor matrix.
 
 ![3](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/4.png)
 ![4](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/5.png)
-## 
+ 
 ⚫ We remove all objects except numbers and characters.
 
 ![5](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/6.png)
 ![6](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/7.png)
-## 
+ 
 ⚫ We convert the processed image to Blach&White again.
 
 ![7](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/8.png)
-## 
+ 
 ⚫ We remove noise pixels(undesired small objects) using EROSION, we use this image later to recognize the characters and digits.
 
 ![8](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/9.png)
-## 
+ 
 ⚫ We make every arabic letter with dots to be one single object using DILATION to use this image later to extract the real number of characters and digits in numANDchar function.
 
 ![9](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/10.png)
