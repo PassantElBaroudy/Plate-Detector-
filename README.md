@@ -35,7 +35,7 @@ you can check source file to know the type of each plate and it's Governorate
 ![5](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/6.png)
 ![6](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/7.png)
  
-⚫ We convert the processed image to Blach&White again.
+⚫ We convert the processed image to Black&White again.
 
 ![7](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/screenshots/8.png)
  
