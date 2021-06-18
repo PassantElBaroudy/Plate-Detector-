@@ -43,27 +43,29 @@ def plate_enhancement(img):
     binary_img = cv2.threshold(grayImage,180 , 255, cv2.THRESH_BINARY_INV)[1]
 
 
-    #Label and color plate img
+    #Labeling and coloring the plate img using mycolors matrix, all blue pixles will be removed later
     _,lbl_img,_, _=cv2.connectedComponentsWithStats(np.uint8(binary_img), 4, cv2.CV_32S)
     rgb_lbl_img = label2rgb(lbl_img,colors=mycolors,bg_label=1,bg_color=(255,255,255))
     
-    #Remove border have RGB = [0,0,255]
+    #Remove borders and objects that have RGB = [0,0,255] by setting its pixels to zeros
     row, col = np.shape(binary_img)
     for r in range(0, row):
         for c in range(0, col):
             if rgb_lbl_img[r,c,2]==255:
                 lbl_img[r,c] = 0
 
-    #Remove remaining pixel from top part
+    #Remove remaining pixels from top part(undesired texts and objects ex:EGYPT,POLICE)
     for r in range(1,int(row/3)):
         for c in range(1,col):
             if lbl_img[r,c] != 0:
                 lbl_img[r,c] = 0
 
-    #final image B&W
+    #convert the processed image to Blach&White again
     final_img = cv2.threshold( np.uint8(lbl_img),0 , 255, cv2.THRESH_BINARY)[1]
+    #remove noise pixels using EROSION
     kernel1 =cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(1,2))
     final_img1 = cv2.erode(final_img,kernel1,iterations = 1)
+    #make every arabic letter with dots to be one single object using DILATION to use this image later to extract the real number of characters and digits.
     kernel =cv2.getStructuringElement(cv2.MORPH_RECT,(5,50))
     final_img1 = cv2.dilate(final_img1,kernel1,iterations = 20)
     num_objects,_,dims,centers=cv2.connectedComponentsWithStats(np.uint8(final_img1), 4, cv2.CV_32S)
