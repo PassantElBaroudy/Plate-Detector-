@@ -62,8 +62,12 @@ get the mean of the color and check its range within which range to know the pla
 ![characters](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/chars.png)
 ![numbers](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/nums.png)
 
+## mainfunc function
+⚫ This is our main function, where all the other functions are being called from. The main function takes the path of the image, reads it, send it to the plate enhancement function, then the output of the plate enhancemet fuction is given to split plate function to split the plate into numbers and characters, then we pass all the info to our functions to finally get the output (GovName, Plate Colour, etc..)
 
-
+## VPD (GUI)
+⚫ This is our GUI function, where we call the main function there, and with the use of browse button we can specify the image needed and its path is given to a text box then it's given to the main function to start doing its function, then we take the output of the main function and using some labels we show the output on the screen for the user. 
+Also there is a restart button where the user can restart the application without having to exit and re-open the application.
 
 # User Guide:
 ![Test Case](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/vpd.PNG)
