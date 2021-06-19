@@ -70,7 +70,7 @@ get the mean of the color and check its range within which range to know the pla
 Also there is a restart button where the user can restart the application without having to exit and re-open the application.
 
 # User Guide:
-![Test Case](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/vpd.PNG)
+![Test Case](https://github.com/PassantElBaroudy/Plate-Detector-/blob/main/source/CaptureVPD.JPG)
 
 
 1- Browse to choose the image 
