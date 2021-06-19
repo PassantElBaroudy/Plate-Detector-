@@ -34,7 +34,7 @@ def vp_start_gui():
     def ShowImage():
         #photo=PhotoImage(file=ent1.get())
         Dict = {"٢٥٩٤سجط": ['Andrew Raafat','24','No Fees','Kia Rio'],
-            "٢٥٩٦٣": ['Passant El Baroudy','23','400','lancer'], "٢٥٩٤س٦٣": ['Youssef Raafat','23','700','MG6'], "٢٥١٦سم": ['Reem Mady','24','No Fees','Mercedes C180'], "٢٥٩فحق": ['Amr Sherif','36','1520','Fiat Tippo'],"٦٧٤٣طدر": ['Adham Hesham','42','855','BMW 320i'],"٢٣٤٨نر": ['Fatma Abdel Aziz','63','8535','Jeep'],"٨٧٦دخع": ['Ibrahim Talaat','82','45','Chrysler'],"١٢١صخع": ['Fady Farid','42','450','Nissan Sunny']}  
+            "٢٥٩٦٣": ['Passant El Baroudy','23','400','lancer'], "٢٥٩٤س٦٣": ['Youssef Raafat','23','700','MG6'], "٢٥١٦سم": ['Reem Mady','24','No Fees','Mercedes C180'], "٢٥٩فحق": ['Amr Sherif','36','1520','Suzuki Van'],"٦٧٤٣طدر": ['Adham Hesham','42','855','BMW 320i'],"٢٣٤٨نر": ['Fatma Abdel Aziz','63','8535','Jeep'],"٨٧٦دخع": ['Ibrahim Talaat','82','45','Chrysler'],"١٢١صخع": ['Fady Farid','42','450','Nissan Sunny']}  
         path=ent1.get() 
         #print("path=",path)
         carcolor,GovName,chars,numbers=mainfunc(path)
